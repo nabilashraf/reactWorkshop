@@ -36,14 +36,11 @@ const AppDrawer = createDrawerNavigator({
 
 const navigationOptionsHeader = ({ navigation }) => {
   return {
-    headerTitle: 'Home',
-    headerRight: (
-      <Button
-        onPress={() => navigation.toggleDrawer()}
-        title="Menu"
-        color="#222"
-      />
-    )
+    headerLeft: (
+      <Button onPress={() => navigation.openDrawer()} > 
+        Menu
+      </Button>
+    ),
   };
 };
 
